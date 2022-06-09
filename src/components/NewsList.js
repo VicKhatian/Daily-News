@@ -5,8 +5,9 @@ import NewsItem from "./NewsItem";
 
 function NewsList() {
   const [list, setList] = useState([]); //list of news per page
-  const [text, setText] = useState(""); //collecting text from input field
-  const [search, setSearch] = useState("UK"); //changes search parameters
+  //   const [text, setText] = useState(""); //collecting text from input field
+  //   const [search, setSearch] = useState("UK"); //changes search parameters
+  const [search, setSearch] = useState("UK");
 
   useEffect(() => {
     const fetchData = async () => {
@@ -20,24 +21,19 @@ function NewsList() {
     fetchData();
   }, [search]);
 
-  function handleChange(e) {
-    setText(e.target.value);
-  }
+  //   function handleChange(e) {
+  //     setText(e.target.value);
+  //   }
 
-  function handleClick() {
-    setSearch(text);
-    console.log(text);
+  function handleClick(e) {
+    setSearch(e.target.value);
+    console.log(search);
   }
 
   //we are rendering all the articles that we've fetched (max 10)
   return (
     <div>
-      <div className="search">
-        <input onChange={handleChange} placeholder="Search" />
-        <button onClick={handleClick} className="button">
-          Submit
-        </button>
-      </div>
+      <h1>Popular articles from the section "{search}" </h1>
       {list.map((item) => {
         return (
           <NewsItem
@@ -48,6 +44,27 @@ function NewsList() {
           />
         );
       })}
+      <div className="topics">
+        <button onClick={handleClick} value="business" className="button-topic">
+          Business
+        </button>
+        <button onClick={handleClick} value="World" className="button-topic">
+          World
+        </button>
+        <button
+          onClick={handleClick}
+          value="Technology"
+          className="button-topic"
+        >
+          Technology
+        </button>
+        <button onClick={handleClick} value="Sports" className="button-topic">
+          Sports
+        </button>
+        <button onClick={handleClick} value="Health" className="button-topic">
+          Health
+        </button>
+      </div>
     </div>
   );
 }

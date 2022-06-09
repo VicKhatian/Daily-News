@@ -15,7 +15,8 @@ The news on the website:
 2. allowing user to search for specific key words
 3. Topics available are:
    - breaking-news,
-   - world, nation,
+   - world,
+   - nation,
    - business,
    - technology,
    - entertainment,

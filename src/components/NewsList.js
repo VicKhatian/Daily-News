@@ -5,20 +5,20 @@ import NewsItem from "./NewsItem";
 
 function NewsList() {
   const [list, setList] = useState([]); //list of news per page
-  const [text, setText] = useState(""); //
-  const [search, setSearch] = useState("UK");
+  const [text, setText] = useState(""); //collecting text from input field
+  const [search, setSearch] = useState("UK"); //changes search parameters
 
   useEffect(() => {
     const fetchData = async () => {
       const response = await fetch(
-        `https://gnews.io/api/v4/search?q=${search}&lang=en&token=7bafd4fddd55d7bf781b2a8bce7a696e`
+        `https://gnews.io/api/v4/search?q=${search}&lang=en&token=${process.env.REACT_APP_API_TOKEN}`
       );
       const data = await response.json(); //getting data by search( in json format )
       console.log(data);
       setList(data.articles);
     };
     fetchData();
-  }, [search]); //we want our data to be loaded just once, so empty array
+  }, [search]);
 
   function handleChange(e) {
     setText(e.target.value);

@@ -1,3 +1,4 @@
+import "./NewsList.css";
 import React, { useState, useEffect } from "react";
 import NewsItem from "./NewsItem";
 
@@ -5,35 +6,43 @@ import NewsItem from "./NewsItem";
 
 function NewsList() {
   const [list, setList] = useState([]); //list of news per page
-  //   const [text, setText] = useState(""); //collecting text from input field
+  //   const [text, setText] = useState(""); //collecting text from input fie   ld
   //   const [search, setSearch] = useState("UK"); //changes search parameters
-  const [search, setSearch] = useState("UK");
+  const [topic, setTopic] = useState("Technology");
 
   useEffect(() => {
     const fetchData = async () => {
       const response = await fetch(
-        `https://gnews.io/api/v4/search?q=${search}&lang=en&token=${process.env.REACT_APP_API_TOKEN}`
+        `https://gnews.io/api/v4/search?q=${topic}&lang=en&token=${process.env.REACT_APP_API_TOKEN}`
       );
       const data = await response.json(); //getting data by search( in json format )
       console.log(data);
       setList(data.articles);
     };
     fetchData();
-  }, [search]);
+  }, [topic]);
 
   //   function handleChange(e) {
   //     setText(e.target.value);
   //   }
 
   function handleClick(e) {
-    setSearch(e.target.value);
-    console.log(search);
+    setTopic(e.target.value);
+    console.log(topic);
   }
 
   //we are rendering all the articles that we've fetched (max 10)
   return (
     <div>
-      <h1>Popular articles from the section "{search}" </h1>
+      <div className="header">
+        <div className="header-left">Search</div>
+        <div className="header-right">
+          <h1>FRESH NEWS</h1>
+        </div>
+      </div>
+
+      <h3>Popular articles from the section "{topic}" </h3>
+
       {list.map((item) => {
         return (
           <NewsItem

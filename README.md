@@ -16,7 +16,6 @@ The news on the website:
 3. Topics available are:
    - breaking-news,
    - world,
-   - nation,
    - business,
    - technology,
    - entertainment,

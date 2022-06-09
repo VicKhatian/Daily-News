@@ -41,11 +41,31 @@ function NewsList() {
         </div>
       </div>
       <div className="navbar">
-        <div className="navbar-left">Left</div>
-        <div className="navbar-right">Right</div>
+        <div className="navbar-left">
+          <p>Top</p>
+          <p>World</p>
+          <p>Business</p>
+          <p>Technology</p>
+          <p>Entertainment</p>
+          <p>Sports</p>
+          <p>Science</p>
+          <p>Health</p>
+        </div>
+        <div className="navbar-right">
+          <p>Log-in</p>
+        </div>
       </div>
-
-      <h3>Popular articles from the section "{topic}" </h3>
+      <div className="separator">
+        <div className="separator-8"></div>
+        <div className="separator-4"></div>
+        <div className="separator-2"></div>
+      </div>
+      <div className="main">
+        <div className="topic">
+          <h3>{topic}</h3>
+        </div>
+        <div className="articles"></div>
+      </div>
 
       {list.map((item) => {
         return (

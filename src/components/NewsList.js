@@ -40,6 +40,10 @@ function NewsList() {
           <h1>FRESH NEWS</h1>
         </div>
       </div>
+      <div className="navbar">
+        <div className="navbar-left">Left</div>
+        <div className="navbar-right">Right</div>
+      </div>
 
       <h3>Popular articles from the section "{topic}" </h3>
 

@@ -34,3 +34,20 @@ h1 {
 
   color: white;
 }
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar-left {
+  width: 80%;
+  border: solid black;
+}
+
+.navbar-right {
+  width: 10%;
+  border: solid black;
+}

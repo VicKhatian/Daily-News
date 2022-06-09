@@ -4,8 +4,25 @@
 
 The website is build in `JavaSript` using React JS
 To install - `npx create-react-app name`
-To initialise - `npm i`
+Run `npm i` to install required dependencies
 to run - `npm start`
+
+The news on the website:
+
+1. will be fetched from
+   https://gnews.io/?ref=apilist.fun
+
+2. allowing user to search for specific key words
+3. Topics available are:
+   - breaking-news,
+   - world, nation,
+   - business,
+   - technology,
+   - entertainment,
+   - sports,
+   - science,
+   - health.
+4. 10 articles per page
 
 ## Brief
 

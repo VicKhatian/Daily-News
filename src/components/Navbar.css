@@ -4,30 +4,27 @@
   align-items: center;
   justify-content: space-between;
   height: 42px;
+  text-transform: uppercase;
+  font-size: 12px;
 }
 
 .navbar-left {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  width: 80%;
-  text-transform: uppercase;
 }
 
 #nav {
-  width: 12.5%;
-  padding-top: 12px;
-  padding-bottom: 12px;
   color: black;
   text-decoration: none;
 }
 
+/* it moves other text when getting bigger, fix it */
 #nav:hover {
-  background-color: #699661;
+  font-size: 15px;
 }
 
 .navbar-right {
   display: flex;
   justify-content: space-around;
-  width: 10%;
 }

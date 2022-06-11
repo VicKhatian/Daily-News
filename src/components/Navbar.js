@@ -16,12 +16,6 @@ function Navbar() {
           <Link id="nav" to="/business">
             Business
           </Link>
-          <Link id="nav" to="/tech">
-            Technology
-          </Link>
-          <Link id="nav" to="/entertainment">
-            Entertainment
-          </Link>
           <Link id="nav" to="/sports">
             Sports
           </Link>
@@ -30,6 +24,12 @@ function Navbar() {
           </Link>
           <Link id="nav" to="/health">
             Health
+          </Link>
+          <Link id="nav" to="/tech">
+            Technology
+          </Link>
+          <Link id="nav" to="/entertainment">
+            Entertainment
           </Link>
         </div>
         <div className="navbar-right">

@@ -78,12 +78,21 @@ h1 {
 .main {
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
   margin: 50px;
 }
 
 .topic {
   border: solid black;
   width: 120px;
+}
+
+.articles {
+  width: 80%;
+}
+
+.articles div {
+  border: solid gray;
 }
 
 .footer {

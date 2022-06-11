@@ -1,60 +1,53 @@
-import "./NewsList.css";
+import "./Home.css";
 import React, { useState, useEffect } from "react";
 import NewsItem from "./NewsItem";
+import Navbar from "./Navbar";
 
 //create a component that renders all the articles (10 for page as we are on free account)
 
-function NewsList() {
+function Home() {
   const [list, setList] = useState([]); //list of news per page
-  //   const [text, setText] = useState(""); //collecting text from input fie   ld
-  //   const [search, setSearch] = useState("UK"); //changes search parameters
-  const [topic, setTopic] = useState("Technology");
+  const [text, setText] = useState(""); //collecting text from input field
+  const [search, setSearch] = useState("UK"); //changes search parameters
 
   useEffect(() => {
     const fetchData = async () => {
       const response = await fetch(
-        `https://gnews.io/api/v4/search?q=${topic}&lang=en&token=${process.env.REACT_APP_API_TOKEN}`
+        `https://gnews.io/api/v4/search?q=${search}&lang=en&token=${process.env.REACT_APP_API_TOKEN}`
       );
       const data = await response.json(); //getting data by search( in json format )
       console.log(data);
       setList(data.articles);
     };
     fetchData();
-  }, [topic]);
+  }, [search]);
 
-  //   function handleChange(e) {
-  //     setText(e.target.value);
-  //   }
+  function handleChange(e) {
+    setText(e.target.value);
+  }
 
-  function handleClick(e) {
-    setTopic(e.target.value);
-    console.log(topic);
+  function handleClick() {
+    setSearch(text);
+    console.log(text);
   }
 
   //we are rendering all the articles that we've fetched (max 10)
   return (
     <div>
       <div className="header">
-        <div className="header-left">Search</div>
+        <div className="header-left">
+          <div className="search">
+            <input onChange={handleChange} placeholder="Search" />
+            <button onClick={handleClick} className="button">
+              Submit
+            </button>
+          </div>
+        </div>
         <div className="header-right">
           <h1>FRESH NEWS</h1>
         </div>
       </div>
-      <div className="navbar">
-        <div className="navbar-left">
-          <p>Top</p>
-          <p>World</p>
-          <p>Business</p>
-          <p>Technology</p>
-          <p>Entertainment</p>
-          <p>Sports</p>
-          <p>Science</p>
-          <p>Health</p>
-        </div>
-        <div className="navbar-right">
-          <p>Log-in</p>
-        </div>
-      </div>
+      <Navbar />
       <div className="separator">
         <div className="separator-8"></div>
         <div className="separator-4"></div>
@@ -62,11 +55,10 @@ function NewsList() {
       </div>
       <div className="main">
         <div className="topic">
-          <h3>{topic}</h3>
+          <h3>{search}</h3>
         </div>
         <div className="articles"></div>
       </div>
-
       {list.map((item) => {
         return (
           <NewsItem
@@ -98,8 +90,10 @@ function NewsList() {
           Health
         </button>
       </div>
+      <div className="separator"></div>
+      <div className="footer">Footer</div>
     </div>
   );
 }
 
-export default NewsList;
+export default Home;

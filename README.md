@@ -24,6 +24,8 @@ The news on the website:
    - health.
 4. 10 articles per page
 
+For navigation install `npm install react-router-dom@6`
+
 ## Brief
 
 Create a website that gets news from the GNews api:

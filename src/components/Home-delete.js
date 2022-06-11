@@ -1,12 +1,13 @@
+import "./Home.css";
 import React, { useState, useEffect } from "react";
 import NewsItem from "./NewsItem";
 
 //create a component that renders all the articles (10 for page as we are on free account)
 
-function Search() {
+function HomeDelete() {
   const [list, setList] = useState([]); //list of news per page
   const [text, setText] = useState(""); //collecting text from input field
-  const [search, setSearch] = useState(""); //changes search parameters
+  const [search, setSearch] = useState("UK"); //changes search parameters
 
   useEffect(() => {
     const fetchData = async () => {
@@ -52,4 +53,4 @@ function Search() {
   );
 }
 
-export default Search;
+export default HomeDelete;

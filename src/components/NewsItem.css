@@ -1,0 +1,10 @@
+.news-container {
+}
+.news-item {
+  background-color: pink;
+  width: 500px;
+}
+
+.news-image {
+  width: 30em;
+}

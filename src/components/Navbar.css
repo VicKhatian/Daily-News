@@ -21,7 +21,7 @@
 
 /* it moves other text when getting bigger, fix it */
 #nav:hover {
-  font-size: 15px;
+  background-color: #d4e9d0;
 }
 
 .navbar-right {

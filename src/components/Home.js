@@ -41,6 +41,46 @@ function Home() {
   const a2t = list[1]?.title;
   const a2d = list[1]?.description;
 
+  const a3url = list[2]?.url;
+  const a3img = list[2]?.image;
+  const a3t = list[2]?.title;
+  const a3d = list[2]?.description;
+
+  const a4url = list[3]?.url;
+  const a4img = list[3]?.image;
+  const a4t = list[3]?.title;
+  const a4d = list[3]?.description;
+
+  const a5url = list[4]?.url;
+  const a5img = list[4]?.image;
+  const a5t = list[4]?.title;
+  const a5d = list[4]?.description;
+
+  const a6url = list[5]?.url;
+  const a6img = list[5]?.image;
+  const a6t = list[5]?.title;
+  const a6d = list[5]?.description;
+
+  const a7url = list[6]?.url;
+  const a7img = list[6]?.image;
+  const a7t = list[6]?.title;
+  const a7d = list[6]?.description;
+
+  const a8url = list[7]?.url;
+  const a8img = list[7]?.image;
+  const a8t = list[7]?.title;
+  const a8d = list[7]?.description;
+
+  const a9url = list[8]?.url;
+  const a9img = list[8]?.image;
+  const a9t = list[8]?.title;
+  const a9d = list[8]?.description;
+
+  const a10url = list[9]?.url;
+  const a10img = list[9]?.image;
+  const a10t = list[9]?.title;
+  const a10d = list[9]?.description;
+
   //we are rendering all the articles that we've fetched (max 10)
   return (
     <div>
@@ -69,14 +109,74 @@ function Home() {
         </div>
         <div className="articles">
           <div className="news-item-1">
-            <img src={a1img} alt="" />
-            <h3>{a1t}</h3>
-            <p>{a1d}</p>
+            <a href={a1url}>
+              <img src={a1img} alt="" />
+              <h3>{a1t}</h3>
+              <p>{a1d}</p>
+            </a>
           </div>
           <div className="news-item-2">
-            <img src={a2img} alt="" />
-            <h3>{a2t}</h3>
-            <p>{a2d}</p>
+            <a href={a2url}>
+              <img src={a2img} alt="" />
+              <h3>{a2t}</h3>
+              <p>{a2d}</p>
+            </a>
+          </div>
+          <div className="news-item-3">
+            <a href={a3url}>
+              <img src={a3img} alt="" />
+              <h3>{a3t}</h3>
+              <p>{a3d}</p>
+            </a>
+          </div>
+          <div className="news-item-4">
+            <a href={a4url}>
+              <img src={a4img} alt="" />
+              <h3>{a4t}</h3>
+              <p>{a4d}</p>
+            </a>
+          </div>
+          <div className="news-item-5">
+            <a href={a5url}>
+              <img src={a5img} alt="" />
+              <h3>{a5t}</h3>
+              <p>{a5d}</p>
+            </a>
+          </div>
+          <div className="news-item-6">
+            <a href={a6url}>
+              <img src={a6img} alt="" />
+              <h3>{a6t}</h3>
+              <p>{a6d}</p>
+            </a>
+          </div>
+          <div className="news-item-7">
+            <a href={a7url}>
+              <img src={a7img} alt="" />
+              <h3>{a7t}</h3>
+              <p>{a7d}</p>
+            </a>
+          </div>
+          <div className="news-item-8">
+            <a href={a8url}>
+              <img src={a8img} alt="" />
+              <h3>{a8t}</h3>
+              <p>{a8d}</p>
+            </a>
+          </div>
+          <div className="news-item-9">
+            <a href={a9url}>
+              <img src={a9img} alt="" />
+              <h3>{a9t}</h3>
+              <p>{a9d}</p>
+            </a>
+          </div>
+          <div className="news-item-10">
+            <a href={a10url}>
+              <img src={a10img} alt="" />
+              <h3>{a10t}</h3>
+              <p>{a10d}</p>
+            </a>
           </div>
         </div>
       </div>

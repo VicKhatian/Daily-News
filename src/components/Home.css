@@ -234,12 +234,3 @@ h1 {
   text-align: left;
   text-decoration: none;
 }
-.footer {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #699661;
-  width: 100%;
-  height: 200px;
-}

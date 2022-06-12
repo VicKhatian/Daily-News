@@ -1,6 +1,7 @@
 import "./Home.css";
 import React, { useState, useEffect } from "react";
 import Navbar from "./Navbar";
+import Footer from "./Footer";
 
 //create a component that renders all the articles (10 for page as we are on free account)
 
@@ -220,8 +221,13 @@ function Home() {
           </div>
         </div>
       </div>
-      <div className="separator"></div>
-      <div className="footer">Footer</div>
+      <div className="separator">
+        <div className="separator-8"></div>
+        <div className="separator-4"></div>
+        <div className="separator-2"></div>
+      </div>
+      <Navbar />
+      <Footer />
     </div>
   );
 }

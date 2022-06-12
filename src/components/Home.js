@@ -87,12 +87,10 @@ function Home() {
     <div>
       <div className="header">
         <div className="header-left">
-          <div className="search">
-            <input onChange={handleChange} placeholder="Search" />
-            <button onClick={handleClick} className="button">
-              Submit
-            </button>
-          </div>
+          <input onChange={handleChange} placeholder="Search" />
+          <button onClick={handleClick} className="button">
+            Submit
+          </button>
         </div>
         <div className="header-right">
           <h1>FRESH NEWS</h1>

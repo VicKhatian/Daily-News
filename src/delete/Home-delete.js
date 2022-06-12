@@ -1,6 +1,6 @@
 import "./Home.css";
 import React, { useState, useEffect } from "react";
-import NewsItem from "./NewsItem";
+import NewsItem from "../components/NewsItem";
 
 //create a component that renders all the articles (10 for page as we are on free account)
 

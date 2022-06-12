@@ -26,6 +26,14 @@ The news on the website:
 
 For navigation install `npm install react-router-dom@6`
 
+Bugs to fix:
+
+1. Text in articles overflow from the container, needs to be responsive
+2. Home page renders UK search
+3. Make "search" a component
+4. Not searching by category, but by search only
+5. Performance of the site is slow, google to fix it
+
 ## Brief
 
 Create a website that gets news from the GNews api:

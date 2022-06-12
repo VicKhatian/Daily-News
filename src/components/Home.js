@@ -175,69 +175,51 @@ function Home() {
                 </div>
               </div>
             </div>
-            {/* <div className="left">
-              <div className="news-item-2">
-                <img src={a2img} alt="" />
-                <h3>{a2t}</h3>
-                <p>{a2d}</p>
-              </div>
-              <div className="news-item-3">
-                <img src={a3img} alt="" />
-                <h3>{a3t}</h3>
-                <p>{a3d}</p>
-              </div>
-              <div className="news-item-4">
-                <img src={a4img} alt="" />
-                <h3>{a4t}</h3>
-                <p>{a4d}</p>
-              </div>
-              <div className="news-item-5">
-                <img src={a5img} alt="" />
-                <h3>{a5t}</h3>
-                <p>{a5d}</p>
-              </div>
-            </div>
-            <div className="right">
-              <div className="news-item-6">
-                <img src={a6img} alt="" />
-                <h3>{a6t}</h3>
-                <p>{a6d}</p>
-              </div>
-            </div> */}
           </div>
-          {/* <div className="a-bottom">
-            <div className="news-item-7">
-              <a href={a7url}>
-                <img src={a7img} alt="" />
+          <div className="bottom">
+            <div className="news-item-bottom">
+              <img src={a7img} alt="" />
+              <div className="news-item-bottom-info">
                 <h3>{a7t}</h3>
                 <p>{a7d}</p>
-              </a>
+                <p>
+                  <a href={a7url}>Read more...</a>
+                </p>
+              </div>
             </div>
-            <div className="news-item-8">
-              <a href={a8url}>
-                <img src={a8img} alt="" />
+            <div className="news-item-bottom">
+              <img src={a8img} alt="" />
+              <div className="news-item-bottom-info">
                 <h3>{a8t}</h3>
                 <p>{a8d}</p>
-              </a>
+                <p>
+                  <a href={a8url}>Read more...</a>
+                </p>
+              </div>
             </div>
-            <div className="news-item-9">
-              <a href={a9url}>
-                <img src={a9img} alt="" />
+            <div className="news-item-bottom">
+              <img src={a9img} alt="" />
+              <div className="news-item-bottom-info">
                 <h3>{a9t}</h3>
                 <p>{a9d}</p>
-              </a>
+                <p>
+                  <a href={a9url}>Read more...</a>
+                </p>
+              </div>
             </div>
-            <div className="news-item-10">
-              <a href={a10url}>
-                <img src={a10img} alt="" />
+            <div className="news-item-bottom">
+              <img src={a10img} alt="" />
+              <div className="news-item-bottom-info">
                 <h3>{a10t}</h3>
                 <p>{a10d}</p>
-              </a>
+                <p>
+                  <a href={a10url}>Read more...</a>
+                </p>
+              </div>
             </div>
-          </div> */}
+          </div>
         </div>
       </div>
-      <div className="news-container"></div>
       <div className="separator"></div>
       <div className="footer">Footer</div>
     </div>

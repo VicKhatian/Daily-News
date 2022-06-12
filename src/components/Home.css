@@ -8,6 +8,13 @@
   height: 200px;
 }
 
+a {
+  text-decoration: none;
+  color: #699661;
+  font-weight: bold;
+  font-family: Helvetica, sans-serif;
+}
+
 .header-left {
   max-width: 400px;
   height: 26px;
@@ -21,7 +28,7 @@
 }
 
 h1 {
-  font-family: "Roboto", sans-serif;
+  font-family: Helvetica, sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 80px;
@@ -82,7 +89,7 @@ h1 {
 }
 
 .topic {
-  /* border: solid black; */
+  background-color: rgb(238, 232, 233);
   width: 12%;
 }
 
@@ -100,22 +107,23 @@ h1 {
 }
 
 .news-item-1 img {
-  width: auto;
+  width: 60%;
+  object-fit: cover;
 }
 
 .news-item-1-info {
-  width: auto;
+  width: 40%;
   padding: 15px;
 }
 
 .news-item-1-info h3 {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: Helvetica, sans-serif;
   font-size: 24px;
   text-align: left;
 }
 
 .news-item-1-info p {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: Helvetica, sans-serif;
   font-size: 14px;
   text-align: left;
   text-decoration: none;
@@ -140,6 +148,11 @@ h1 {
   margin-bottom: 5px;
 }
 
+.news-item-2 img {
+  width: 20%;
+  object-fit: cover;
+}
+
 .news-item-2-info {
   padding-left: 5px;
   padding-right: 5px;
@@ -152,7 +165,7 @@ h1 {
 }
 
 .news-item-2-info p {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: Helvetica, sans-serif;
   font-size: 10px;
   text-align: left;
   text-decoration: none;
@@ -176,18 +189,51 @@ h1 {
 }
 
 .news-item-6-info h3 {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: Helvetica, sans-serif;
   font-size: 18px;
   text-align: left;
 }
 
 .news-item-6-info p {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: Helvetica, sans-serif;
   font-size: 12px;
   text-align: left;
   text-decoration: none;
 }
 
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  height: 400px;
+}
+
+.news-item-bottom {
+  width: 24%;
+  background-color: rgb(238, 232, 233);
+  margin: 5px;
+}
+
+.news-item-bottom img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.news-item-bottom-info {
+  padding: 5px;
+}
+
+.news-item-bottom-info h3 {
+  font-family: Helvetica, sans-serif;
+  font-size: 18px;
+  text-align: left;
+}
+
+.news-item-bottom-info p {
+  font-family: Helvetica, sans-serif;
+  font-size: 12px;
+  text-align: left;
+  text-decoration: none;
+}
 .footer {
   display: flex;
   flex-direction: row;

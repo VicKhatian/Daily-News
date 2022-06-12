@@ -1,6 +1,5 @@
 import "./Home.css";
 import React, { useState, useEffect } from "react";
-import NewsItem from "./NewsItem";
 import Navbar from "./Navbar";
 
 //create a component that renders all the articles (10 for page as we are on free account)
@@ -18,6 +17,7 @@ function Home() {
       const data = await response.json(); //getting data by search( in json format )
       console.log(data);
       setList(data.articles);
+      console.log(list);
     };
     fetchData();
   }, [search]);
@@ -30,6 +30,16 @@ function Home() {
     setSearch(text);
     console.log(text);
   }
+  //Diconstruct all the articles so to tailor style for each container. Map method renders all 10 articles in one div and I don't know how to style them separately. Hint: a-article, 1-number, url, img, t-title, d-description
+  const a1url = list[0]?.url;
+  const a1img = list[0]?.image;
+  const a1t = list[0]?.title;
+  const a1d = list[0]?.description;
+
+  const a2url = list[1]?.url;
+  const a2img = list[1]?.image;
+  const a2t = list[1]?.title;
+  const a2d = list[1]?.description;
 
   //we are rendering all the articles that we've fetched (max 10)
   return (
@@ -57,39 +67,20 @@ function Home() {
         <div className="topic">
           <h3>{search}</h3>
         </div>
-        <div className="articles"></div>
+        <div className="articles">
+          <div className="news-item-1">
+            <img src={a1img} alt="" />
+            <h3>{a1t}</h3>
+            <p>{a1d}</p>
+          </div>
+          <div className="news-item-2">
+            <img src={a2img} alt="" />
+            <h3>{a2t}</h3>
+            <p>{a2d}</p>
+          </div>
+        </div>
       </div>
-      {list.map((item) => {
-        return (
-          <NewsItem
-            title={item.title}
-            description={item.description}
-            image={item.image}
-            url={item.url}
-          />
-        );
-      })}
-      <div className="topics">
-        <button onClick={handleClick} value="business" className="button-topic">
-          Business
-        </button>
-        <button onClick={handleClick} value="World" className="button-topic">
-          World
-        </button>
-        <button
-          onClick={handleClick}
-          value="Technology"
-          className="button-topic"
-        >
-          Technology
-        </button>
-        <button onClick={handleClick} value="Sports" className="button-topic">
-          Sports
-        </button>
-        <button onClick={handleClick} value="Health" className="button-topic">
-          Health
-        </button>
-      </div>
+      <div className="news-container"></div>
       <div className="separator"></div>
       <div className="footer">Footer</div>
     </div>

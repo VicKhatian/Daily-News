@@ -6,6 +6,7 @@ The website is build in `JavaSript` using React JS
 To install - `npx create-react-app name`
 Run `npm i` to install required dependencies
 to run - `npm start`
+To create routes - `npm i react-router-dom` v6.
 
 The news on the website:
 
@@ -14,7 +15,7 @@ The news on the website:
 
 2. allowing user to search for specific key words
 3. Topics available are:
-   - breaking-news,
+   - UK,
    - world,
    - business,
    - technology,
@@ -26,7 +27,9 @@ The news on the website:
 
 For navigation install `npm install react-router-dom@6`
 
-Bugs to fix:
+Low-fidelity design you can find in "./src/prototype/prototype.png"
+
+Next steps to develop:
 
 1. Text in articles overflow from the container, needs to be responsive
 2. Home page renders UK search
@@ -35,6 +38,8 @@ Bugs to fix:
 5. Performance of the site is slow, google to fix it
 6. Create a function to check if article has been repeated
 7. Create a function to check length of the title and description to put in proper div
+8. Responsive text and layout. Layout on mobile screen is different, so the text fonts.
+9. Sometimes images are coming stretched from external sources. Check if there's a way to fix it.
 
 ## Brief
 

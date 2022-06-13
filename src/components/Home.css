@@ -1,3 +1,5 @@
+/* DESKTOP 1024 and more */
+/* @media only screen and (min-width: 1024px)  */
 .header {
   display: flex;
   flex-direction: row;
@@ -6,6 +8,18 @@
   background-color: #699661;
   width: 100%;
   height: 200px;
+}
+
+@media only screen and (max-width: 766px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #699661;
+    width: 100%;
+    height: 100px;
+  }
 }
 
 /* styling links for "Read more...". Links for navbar are styled in navbar */
@@ -48,6 +62,18 @@ h1 {
   color: white;
 }
 
+@media only screen and (max-width: 766px) {
+  h1 {
+    font-family: Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 50px;
+    line-height: 34px;
+
+    letter-spacing: 2px;
+  }
+}
+
 /* decoration lines after header */
 .separator {
   display: flex;
@@ -79,13 +105,37 @@ h1 {
   margin: 50px;
 }
 
+@media only screen and (max-width: 766px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 5px;
+  }
+}
+
 /* Left side of Main */
 .topic {
   background-color: #ededed;
   width: 14%;
   letter-spacing: 1px;
+  font-family: Helvetica, sans-serif;
+  font-size: 1vw;
   text-transform: uppercase;
   padding-top: 20px;
+}
+
+@media only screen and (max-width: 766px) {
+  .topic {
+    background-color: #ededed;
+    width: 100%;
+    letter-spacing: 1px;
+    font-family: Helvetica, sans-serif;
+    font-size: 10px;
+    text-transform: uppercase;
+    padding: 5px;
+    margin-bottom: 5px;
+  }
 }
 
 /* Right side of Main */
@@ -94,6 +144,12 @@ h1 {
   flex-direction: column;
   justify-content: space-evenly;
   width: 85%;
+}
+
+@media only screen and (max-width: 766px) {
+  .articles {
+    width: 100%;
+  }
 }
 
 /* TOP section */
@@ -119,7 +175,7 @@ h1 {
 
 .news-item-top-info h3 {
   font-family: Helvetica, sans-serif;
-  font-size: 24px;
+  font-size: 1.9vw;
   text-align: left;
   overflow: hidden;
   text-overflow: clip;
@@ -127,11 +183,35 @@ h1 {
 
 .news-item-top-info p {
   font-family: Helvetica, sans-serif;
-  font-size: 14px;
+  font-size: 1vw;
   text-align: left;
   text-decoration: none;
 }
 
+/* TOP section - media query */
+@media only screen and (max-width: 766px) {
+  .news-item-top {
+    height: 150px;
+  }
+
+  .news-item-top img {
+    width: 50%;
+  }
+
+  .news-item-top-info h3 {
+    font-size: 10px;
+    text-align: left;
+    overflow: hidden;
+    text-overflow: clip;
+  }
+
+  .news-item-top-info p {
+    font-size: 10px;
+    margin: 0px;
+  }
+}
+
+/* MIDDLE section */
 .articles-middle {
   display: flex;
   flex-direction: row;
@@ -140,6 +220,17 @@ h1 {
   height: 480px;
 }
 
+/* MIDDLE - media*/
+
+@media only screen and (max-width: 766px) {
+  .articles-middle {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+  }
+}
 /* MIDDLE LEFT sections */
 .articles-middle .left {
   width: 59%;
@@ -161,23 +252,48 @@ h1 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding-left: 5px;
-  padding-right: 5px;
+  padding: 5px;
 }
 
 .news-item-left-info h3 {
   font-family: Helvetica, sans-serif;
-  font-size: 14px;
+  font-size: 1vw;
   text-align: left;
   overflow: hidden;
   text-overflow: clip;
+  margin: 0px;
 }
 
 .news-item-left-info p {
   font-family: Helvetica, sans-serif;
-  font-size: 10px;
+  font-size: 0.7vw;
   text-align: left;
   text-decoration: none;
+  margin: 0px;
+}
+
+/* MIDDLE LEFT - media query*/
+@media only screen and (max-width: 766px) {
+  .articles-middle .left {
+    width: 100%;
+  }
+
+  .news-item-left {
+    height: 60px;
+  }
+
+  .news-item-left-info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .news-item-left-info h3 {
+    font-size: 8px;
+  }
+
+  .news-item-left-info p {
+    font-size: 6px;
+  }
 }
 
 /* MIDDLE RIGHT section */
@@ -203,7 +319,7 @@ h1 {
 
 .news-item-right-info h3 {
   font-family: Helvetica, sans-serif;
-  font-size: 18px;
+  font-size: 1.5vw;
   text-align: left;
   overflow: hidden;
   text-overflow: clip;
@@ -211,9 +327,32 @@ h1 {
 
 .news-item-right-info p {
   font-family: Helvetica, sans-serif;
-  font-size: 12px;
+  font-size: 1vw;
   text-align: left;
   text-decoration: none;
+}
+
+/* MIDDLE RIGHT - media query*/
+@media only screen and (max-width: 766px) {
+  .articles-middle .right {
+    width: 100%;
+  }
+
+  .news-item-right {
+    flex-direction: row;
+    height: 60px;
+  }
+  .news-item-right img {
+    width: 20%;
+    object-fit: cover;
+  }
+  .news-item-right-info h3 {
+    font-size: 8px;
+  }
+
+  .news-item-right-info p {
+    font-size: 6px;
+  }
 }
 
 /* BOTTOM sections */
@@ -246,19 +385,46 @@ h1 {
 /*to hide the overflow of the text, we use text-overflow. text-overflow: ellipsis - doesn't work, so temp solution was to clip*/
 .news-item-bottom-info h3 {
   font-family: Helvetica, sans-serif;
-  font-size: 18px;
+  font-size: 1vw;
   text-align: left;
   height: 66px;
   /* white-space: nowrap; */
   overflow: hidden;
   text-overflow: clip;
+  margin: 0px;
 }
 
 .news-item-bottom-info p {
   font-family: Helvetica, sans-serif;
-  font-size: 12px;
+  font-size: 1vw;
   text-align: left;
-  /* text-decoration: none; */
+  text-decoration: none;
   overflow: hidden;
-  text-overflow: ellipsis;
+  text-overflow: ellipsi s;
+  margin: 0px;
+}
+
+/* BOTTOM MEDIA query*/
+@media only screen and (max-width: 766px) {
+  .bottom {
+    height: 200px;
+  }
+
+  .news-item-bottom img {
+    height: 50%;
+  }
+
+  .news-item-bottom-info {
+    padding: 0px 5px 0px 5px;
+    height: 45%;
+  }
+  .news-item-bottom-info h3 {
+    font-size: 8px;
+    height: auto;
+    margin-bottom: 5px;
+  }
+
+  .news-item-bottom-info p {
+    font-size: 6px;
+  }
 }

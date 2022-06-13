@@ -7,7 +7,6 @@ const Footer = () => {
       <div className="footer-info">
         <p>Contact us</p>
         <p>LinkedIn</p>
-        <p>GitHub</p>
         <p>News archive</p>
       </div>
       <div className="footer-copyright">

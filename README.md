@@ -2,6 +2,8 @@
 
 ## Solution
 
+The news site is ready to be published at https://percaysorecruitment.github.io/pe3-soc_cohort_8-VicKhatian/
+
 The website is build in `JavaSript` using React JS
 To install - `npx create-react-app name`
 Run `npm i` to install required dependencies

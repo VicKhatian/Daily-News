@@ -2,7 +2,7 @@
 
 ## Solution
 
-The news site is published at https://glistening-mousse-846a7b.netlify.app/business . Sorry it's published late as I struglled to find a solution for my error (to add CI = before the token key+value)
+The news site is published at https://glistening-mousse-846a7b.netlify.app/. Sorry it's published late as I struglled to find a solution for my error (to add CI = before the token key+value)
 
 Site might not work properly as the api key token might be invalid due to limit of call per day.
 

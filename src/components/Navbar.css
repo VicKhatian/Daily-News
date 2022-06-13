@@ -12,6 +12,14 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
+  width: 80%;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 10%;
 }
 
 #nav {
@@ -19,12 +27,11 @@
   letter-spacing: 1px;
 }
 
-/* it moves other text when getting bigger, fix it */
 #nav:hover {
   background-color: #ededed;
 }
 
-.navbar-right {
+.navbar-right p {
   display: flex;
   justify-content: space-around;
 }

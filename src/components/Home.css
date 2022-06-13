@@ -8,12 +8,14 @@
   height: 200px;
 }
 
+/* styling links for "Read more...". Links for navbar are styled in navbar */
 a {
   text-decoration: none;
   color: #699661;
   font-family: Helvetica, sans-serif;
 }
 
+/* Search area */
 .header-left {
   display: flex;
   justify-content: space-between;
@@ -32,6 +34,7 @@ a {
   margin-right: 50px;
 }
 
+/* FRESH NEWS */
 h1 {
   font-family: Helvetica, sans-serif;
   font-style: normal;
@@ -45,25 +48,7 @@ h1 {
   color: white;
 }
 
-.navbar {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  height: 42px;
-}
-
-.navbar-left {
-  display: flex;
-  justify-content: space-around;
-  width: 80%;
-}
-
-.navbar-right {
-  display: flex;
-  justify-content: space-around;
-  width: 10%;
-}
+/* decoration lines after header */
 .separator {
   display: flex;
   flex-direction: column;
@@ -94,122 +79,144 @@ h1 {
   margin: 50px;
 }
 
+/* Left side of Main */
 .topic {
   background-color: #ededed;
-  width: 12%;
+  width: 14%;
   letter-spacing: 1px;
   text-transform: uppercase;
   padding-top: 20px;
 }
 
+/* Right side of Main */
 .articles {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   width: 85%;
 }
-.news-item-1 {
+
+/* TOP section */
+.news-item-top {
   display: flex;
   flex-direction: row-reverse;
   background-color: #ededed;
   height: 320px;
 }
 
-.news-item-1 img {
+.news-item-top img {
   width: 60%;
   object-fit: cover;
 }
 
-.news-item-1-info {
+.news-item-top-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   width: 40%;
   padding: 15px;
 }
 
-.news-item-1-info h3 {
+.news-item-top-info h3 {
   font-family: Helvetica, sans-serif;
   font-size: 24px;
   text-align: left;
+  overflow: hidden;
+  text-overflow: clip;
 }
 
-.news-item-1-info p {
+.news-item-top-info p {
   font-family: Helvetica, sans-serif;
   font-size: 14px;
   text-align: left;
   text-decoration: none;
 }
 
-.a-middle {
+.articles-middle {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-top: 5px;
+  margin-top: 1%;
   height: 480px;
 }
 
-.a-middle .left {
+/* MIDDLE LEFT sections */
+.articles-middle .left {
   width: 59%;
 }
 
-.news-item-2 {
+.news-item-left {
   display: flex;
   background-color: #ededed;
   height: 115px;
   margin-bottom: 5px;
 }
 
-.news-item-2 img {
+.news-item-left img {
   width: 20%;
   object-fit: cover;
 }
 
-.news-item-2-info {
+.news-item-left-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   padding-left: 5px;
   padding-right: 5px;
 }
 
-.news-item-2-info h3 {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+.news-item-left-info h3 {
+  font-family: Helvetica, sans-serif;
   font-size: 14px;
   text-align: left;
+  overflow: hidden;
+  text-overflow: clip;
 }
 
-.news-item-2-info p {
+.news-item-left-info p {
   font-family: Helvetica, sans-serif;
   font-size: 10px;
   text-align: left;
   text-decoration: none;
 }
 
-.a-middle .right {
+/* MIDDLE RIGHT section */
+.articles-middle .right {
   width: 40%;
   height: auto;
 }
 
-.news-item-6 {
+.news-item-right {
   display: flex;
   flex-direction: column;
   background-color: #ededed;
   height: 475px;
 }
 
-.news-item-6-info {
+.news-item-right-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   padding-left: 5px;
   padding-right: 5px;
 }
 
-.news-item-6-info h3 {
+.news-item-right-info h3 {
   font-family: Helvetica, sans-serif;
   font-size: 18px;
   text-align: left;
+  overflow: hidden;
+  text-overflow: clip;
 }
 
-.news-item-6-info p {
+.news-item-right-info p {
   font-family: Helvetica, sans-serif;
   font-size: 12px;
   text-align: left;
   text-decoration: none;
 }
 
+/* BOTTOM sections */
 .bottom {
   display: flex;
   justify-content: space-between;
@@ -229,18 +236,29 @@ h1 {
 }
 
 .news-item-bottom-info {
-  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0px 5px 0px 5px;
+  height: 57%;
 }
 
+/*to hide the overflow of the text, we use text-overflow. text-overflow: ellipsis - doesn't work, so temp solution was to clip*/
 .news-item-bottom-info h3 {
   font-family: Helvetica, sans-serif;
   font-size: 18px;
   text-align: left;
+  height: 66px;
+  /* white-space: nowrap; */
+  overflow: hidden;
+  text-overflow: clip;
 }
 
 .news-item-bottom-info p {
   font-family: Helvetica, sans-serif;
   font-size: 12px;
   text-align: left;
-  text-decoration: none;
+  /* text-decoration: none; */
+  overflow: hidden;
+  text-overflow: ellipsis;
 }

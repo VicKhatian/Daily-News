@@ -33,6 +33,8 @@ Bugs to fix:
 3. Make "search" a component
 4. Not searching by category, but by search only
 5. Performance of the site is slow, google to fix it
+6. Create a function to check if article has been repeated
+7. Create a function to check length of the title and description to put in proper div
 
 ## Brief
 

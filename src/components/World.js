@@ -1,3 +1,5 @@
+//the page is the same as HOME, the default state for search word (line 13) is as in a name of component
+
 import "./Home.css";
 import React, { useState, useEffect } from "react";
 import Navbar from "./Navbar";
@@ -82,12 +84,12 @@ function World() {
   const a10t = list[9]?.title;
   const a10d = list[9]?.description;
 
-  //we are rendering all the articles that we've fetched (max 10)
+  //we are rendering all the articles that we've fetched (max 10 for free account)
   return (
     <div>
       <div className="header">
         <div className="header-left">
-          <input onChange={handleChange} placeholder="Search" />
+          <input onChange={handleChange} placeholder="Search by keyword" />
           <button onClick={handleClick} className="button">
             Submit
           </button>
@@ -107,10 +109,10 @@ function World() {
           <h3>{search}</h3>
         </div>
         <div className="articles">
-          <div className="a-top">
-            <div className="news-item-1">
+          <div className="articles-top">
+            <div className="news-item-top">
               <img src={a1img} alt="" />
-              <div className="news-item-1-info">
+              <div className="news-item-top-info">
                 <h3>{a1t}</h3>
                 <p>{a1d}</p>
                 <p>
@@ -119,11 +121,11 @@ function World() {
               </div>
             </div>
           </div>
-          <div className="a-middle">
+          <div className="articles-middle">
             <div className="left">
-              <div className="news-item-2">
+              <div className="news-item-left">
                 <img src={a2img} alt="" />
-                <div className="news-item-2-info">
+                <div className="news-item-left-info">
                   <h3>{a2t}</h3>
                   <p>{a2d}</p>
                   <p>
@@ -131,9 +133,9 @@ function World() {
                   </p>
                 </div>
               </div>
-              <div className="news-item-2">
+              <div className="news-item-left">
                 <img src={a3img} alt="" />
-                <div className="news-item-2-info">
+                <div className="news-item-left-info">
                   <h3>{a3t}</h3>
                   <p>{a3d}</p>
                   <p>
@@ -141,9 +143,9 @@ function World() {
                   </p>
                 </div>
               </div>
-              <div className="news-item-2">
+              <div className="news-item-left">
                 <img src={a4img} alt="" />
-                <div className="news-item-2-info">
+                <div className="news-item-left-info">
                   <h3>{a4t}</h3>
                   <p>{a4d}</p>
                   <p>
@@ -151,9 +153,9 @@ function World() {
                   </p>
                 </div>
               </div>
-              <div className="news-item-2">
+              <div className="news-item-left">
                 <img src={a5img} alt="" />
-                <div className="news-item-2-info">
+                <div className="news-item-left-info">
                   <h3>{a5t}</h3>
                   <p>{a5d}</p>
                   <p>
@@ -163,9 +165,9 @@ function World() {
               </div>
             </div>
             <div className="right">
-              <div className="news-item-6">
+              <div className="news-item-right">
                 <img src={a6img} alt="" />
-                <div className="news-item-6-info">
+                <div className="news-item-right-info">
                   <h3>{a6t}</h3>
                   <p>{a6d}</p>
                   <p>

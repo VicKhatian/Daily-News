@@ -2,7 +2,9 @@
 
 ## Solution
 
-The news site is ready to be published at https://percaysorecruitment.github.io/pe3-soc_cohort_8-VicKhatian/
+The news site is published at https://percaysorecruitment.github.io/pe3-soc_cohort_8-VicKhatian/
+
+Site might not work properly as the api key token might be invalid due to limit of call per day.
 
 The website is build in `JavaSript` using React JS
 To install - `npx create-react-app name`

@@ -11,7 +11,7 @@ import { Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
+    <div data-testid="appTestId" className="App">
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="world" element={<World />} />

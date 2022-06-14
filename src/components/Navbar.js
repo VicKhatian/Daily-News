@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 function Navbar() {
   return (
     <div>
-      <div className="navbar">
+      <div data-testid="navTestId" className="navbar">
         <div className="navbar-left">
           <Link id="nav" className="navList" to="/">
             Home

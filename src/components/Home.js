@@ -13,7 +13,7 @@ function Home() {
   useEffect(() => {
     const fetchData = async () => {
       const response = await fetch(
-        `https://gnews.io/api/v4/search?q=${search}&lang=en&token=${process.env.REACT_APP_API_TOKEN}`
+        `https://gnews.io/api/v4/top-headlines?token=efaa86ea463d6586a3f8647f80ab1757&lang=en`
       );
       const data = await response.json(); //getting data by search( in json format )
       console.log(data);

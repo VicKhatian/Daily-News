@@ -4,7 +4,7 @@ https://daily-fresh-news.netlify.app
 
 The website is build in JavaSript using React JS by `npx create-react-app name`
 Run `npm i` to install required dependencies
-to run - `npm start`
+to run - `npm start`.
 
 The news on the website:
 
